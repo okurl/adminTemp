@@ -1579,3 +1579,27 @@ svg {
     height: 1px;
     background: #ddd;
 }
+ul.reminder {
+    list-style: none;
+    padding-left: 0;
+}
+ul.reminder>li:before{
+    float: left;
+    color: #ea5526 !important;
+    content: "\e6c6";
+    font-family: themify;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.btn:hover{
+    cursor: pointer;
+}
