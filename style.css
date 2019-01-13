@@ -1603,3 +1603,50 @@ ul.reminder>li:before{
 .btn:hover{
     cursor: pointer;
 }
+.ckt-tab{
+    margin: 0 -15px !important;
+    border-bottom: 0 !important;
+}
+.ckt-tab .col-md-3{
+    padding:2px 15px;
+}
+.ckt-tab li>a {
+    transition: all .5s ease-in-out;
+    display: block;
+    border-color: #ea5526  !important;
+    border-style: dashed !important;
+    vertical-align: middle;
+    height: 100%;
+    background: #fff;
+}
+.ckt-tab li>a>span{
+    color: #ea5526;
+    font-weight: 500;
+}
+.ckt-tab span.count {
+    transition: all .5s ease-in-out;
+    float: right;
+    margin-right: 10px;
+    background: #fff8f6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.3;
+}
+.ckt-tab li>a:hover{
+    background: #ea5526;
+}
+.ckt-tab li>a:hover>span{
+    color: #fff;
+}
+.ckt-tab li>a:hover>span.count{
+    background: #fff;
+    color:#ea5526;
+}
+ul.ckt-tab >li {
+    margin-bottom: 15px;
+}
+table.table tr .form-control{
+   padding: 3px 4px !important;
+}

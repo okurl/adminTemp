@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from colorlib.com/polygon/adminator/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jan 2019 17:04:01 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <title>Dashboard</title>
+    <style>#loader{transition:all .3s ease-in-out;opacity:1;visibility:visible;position:fixed;height:100vh;width:100%;background:#fff;z-index:90000}#loader.fadeOut{opacity:0;visibility:hidden}.spinner{width:40px;height:40px;position:absolute;top:calc(50% - 20px);left:calc(50% - 20px);background-color:#333;border-radius:100%;-webkit-animation:sk-scaleout 1s infinite ease-in-out;animation:sk-scaleout 1s infinite ease-in-out}@-webkit-keyframes sk-scaleout{0%{-webkit-transform:scale(0)}100%{-webkit-transform:scale(1);opacity:0}}@keyframes sk-scaleout{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}</style>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="app">
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('fadeOut');
+            }, 300);
+        });
+
+    </script>
+    <div>
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-logo">
+                    <div class="peers ai-c fxw-nw">
+                        <div class="peer peer-greed"><a class="sidebar-link td-n" href="index-2.html" class="td-n">
+                                <div class="peers ai-c fxw-nw">
+                                    <div class="peer">
+                                        <div class="logo"><img src="assets/static/images/logo.png" alt=""></div>
+                                    </div>
+                                    <div class="peer peer-greed">
+                                        <h5 class="lh-1 mB-0 logo-text"></h5>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="peer">
+                            <div class="mobile-toggle sidebar-toggle"><a href="#" class="td-n"><i class="ti-arrow-circle-left"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="sidebar-menu scrollable pos-r">
+                    <li class="nav-item mT-30 active"><a class="sidebar-link" href="index-2.html" default><span class="icon-holder"><i class="sky-blue ti-home"></i> </span><span class="title">Dashboard</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="index-2.html" default><span class="icon-holder"><i class="sky-blue ti-user"></i> </span><span class="title">Clients</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="index-2.html" default><span class="icon-holder"><i class="sky-blue ti-calendar"></i> </span><span class="title">Renewal Reports</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="index-2.html" default><span class="icon-holder"><i class="sky-blue ti-clipboard"></i> </span><span class="title">Reports</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="index-2.html" default><span class="icon-holder"><i class="sky-blue ti-timer"></i> </span><span class="title">Reminders</span></a></li>
+                    <li class="nav-item"><a class="sidebar-link" href="index-2.html" default><span class="icon-holder"><i class="sky-blue ti-settings"></i> </span><span class="title">Management</span></a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle" href="javascript:void(0);"><span class="icon-holder"><i class="c-teal-500 ti-view-list-alt"></i> </span><span class="title">Multiple Levels</span> <span class="arrow"><i class="ti-angle-right"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown"><a href="javascript:void(0);"><span>Menu Item</span></a></li>
+                            <li class="nav-item dropdown"><a href="javascript:void(0);"><span>Menu Item</span> <span class="arrow"><i class="ti-angle-right"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0);">Menu Item</a></li>
+                                    <li><a href="javascript:void(0);">Menu Item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="header navbar">
+                <div class="header-container">
+                    <ul class="nav-left">
+                        <li><a id="sidebar-toggle" class="sidebar-toggle" href="javascript:void(0);"><i class="ti-menu"></i></a></li>
+                        <li class="search-box"><a class="search-toggle no-pdd-right" href="javascript:void(0);"><i class="search-icon ti-search pdd-right-10"></i>
+                                <i class="search-icon-close ti-close pdd-right-10"></i></a></li>
+                        <li class="search-input"><input class="form-control" type="text" placeholder="Search..."></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
+                                <div class="peer mR-10"><img class="w-2r bdrs-50p" src="../../../randomuser.me/api/portraits/men/10.jpg" alt=""></div>
+                                <div class="peer"><span class="fsz-sm c-grey-900">John Doe</span></div>
+                            </a>
+                            <ul class="dropdown-menu fsz-sm">
+                                <li><a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-settings mR-10"></i> <span>Setting</span></a></li>
+                                <li><a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-user mR-10"></i> <span>Profile</span></a></li>
+                                <li><a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-email mR-10"></i> <span>Messages</span></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700"><i class="ti-power-off mR-10"></i> <span>Logout</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main class="main-content bgc-grey-100">
+                <div id="mainContent" class="container">
+                    <div class="row gap-10 masonry pos-r">
+                        <div class="masonry-sizer col-md-6"></div>
+                        <div class="masonry-item w-100">
+                            <ul class="nav ckt-tab row nav-tabs">
+                                <li class="col-md-4 active"><a class="layers bd p-20" data-toggle="tab" href="#subadmin"><span>Sub Admin </span><span class="count">5</span></a></li>
+                                <li class="col-md-4"><a class="layers bd p-20" data-toggle="tab" href="#clientgroup"><span>Client Group </span><span class="count">15</span></a></li>
+                                <li class="col-md-4"><a class="layers bd p-20" data-toggle="tab" href="#productgroup"><span>Product Group </span><span class="count">22</span></a></li>
+                                <li class="col-md-4"><a class="layers bd p-20" data-toggle="tab" href="#productname"><span>Product Name </span><span class="count">13</span></a></li>
+                                <li class="col-md-4"><a class="layers bd p-20" data-toggle="tab" href="#insurer"><span>Insurer </span><span class="count">24</span></a></li>
+                                <li class="col-md-4"><a class="layers bd p-20" data-toggle="tab" href="#typeofbusiness"><span>Type of business </span><span class="count">17</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="masonry-item w-100">
+                            <div class="tab-content">
+                                <div id="subadmin" class="tab-pane fade show active">
+                                    <div class="bgc-white p-20 bd">
+                                        <h5 class="c-grey-900">Sub Admin</h5>
+                                        <hr>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Client Name" value="" required=""></div>
+                                            <div class="col-md-9 mb-3">
+                                                <button type="submit" href="#" class="btn cp ckmt amber-bg float-md-right text-white">
+                                                    <i class="ti-plus mr-2"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table bd">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="amber-bg-lt amber" scope="col">#</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Client Name</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Address</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="edit">
+                                                        <th class="slate-blue-bg-lt" scope="row">#</th>
+                                                        <td class="slate-blue-bg-lt">
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Client Name"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <input type="text" class="form-control" placeholder="Enter Value"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <a class="px-1" href="#"><i class="cp text-success ti-save lh-2"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="clientgroup" class="tab-pane fade">
+                                    <div class="bgc-white p-20 bd">
+                                        <h5 class="c-grey-900">Client Group</h5>
+                                        <hr>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Client Name" value="" required=""></div>
+                                            <div class="col-md-9 mb-3">
+                                                <button type="submit" href="#" class="btn cp ckmt amber-bg float-md-right text-white">
+                                                    <i class="ti-plus mr-2"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table bd">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="amber-bg-lt amber" scope="col">#</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Client Name</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Address</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="edit">
+                                                        <th class="slate-blue-bg-lt" scope="row">#</th>
+                                                        <td class="slate-blue-bg-lt">
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Client Name"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <input type="text" class="form-control" placeholder="Enter Value"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <a class="px-1" href="#"><i class="cp text-success ti-save lh-2"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="productgroup" class="tab-pane fade">
+                                   <div class="bgc-white p-20 bd">
+                                        <h5 class="c-grey-900">Product Group</h5>
+                                        <hr>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Client Name" value="" required=""></div>
+                                            <div class="col-md-9 mb-3">
+                                                <button type="submit" href="#" class="btn cp ckmt amber-bg float-md-right text-white">
+                                                    <i class="ti-plus mr-2"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table bd">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="amber-bg-lt amber" scope="col">#</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Client Name</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Address</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="edit">
+                                                        <th class="slate-blue-bg-lt" scope="row">#</th>
+                                                        <td class="slate-blue-bg-lt">
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Client Name"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <input type="text" class="form-control" placeholder="Enter Value"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <a class="px-1" href="#"><i class="cp text-success ti-save lh-2"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="productname" class="tab-pane fade">
+                                     <div class="bgc-white p-20 bd">
+                                        <h5 class="c-grey-900">Product Name</h5>
+                                        <hr>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Client Name" value="" required=""></div>
+                                            <div class="col-md-9 mb-3">
+                                                <button type="submit" href="#" class="btn cp ckmt amber-bg float-md-right text-white">
+                                                    <i class="ti-plus mr-2"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table bd">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="amber-bg-lt amber" scope="col">#</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Client Name</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Address</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="edit">
+                                                        <th class="slate-blue-bg-lt" scope="row">#</th>
+                                                        <td class="slate-blue-bg-lt">
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Client Name"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <input type="text" class="form-control" placeholder="Enter Value"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <a class="px-1" href="#"><i class="cp text-success ti-save lh-2"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="insurer" class="tab-pane fade">
+                                    <div class="bgc-white p-20 bd">
+                                        <h5 class="c-grey-900">Insurer</h5>
+                                        <hr>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Client Name" value="" required=""></div>
+                                            <div class="col-md-9 mb-3">
+                                                <button type="submit" href="#" class="btn cp ckmt amber-bg float-md-right text-white">
+                                                    <i class="ti-plus mr-2"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table bd">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="amber-bg-lt amber" scope="col">#</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Client Name</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Address</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="edit">
+                                                        <th class="slate-blue-bg-lt" scope="row">#</th>
+                                                        <td class="slate-blue-bg-lt">
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Client Name"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <input type="text" class="form-control" placeholder="Enter Value"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <a class="px-1" href="#"><i class="cp text-success ti-save lh-2"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="typeofbusiness" class="tab-pane fade">
+                                    <div class="bgc-white p-20 bd">
+                                        <h5 class="c-grey-900">Type of business</h5>
+                                        <hr>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 mb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Client Name" value="" required=""></div>
+                                            <div class="col-md-9 mb-3">
+                                                <button type="submit" href="#" class="btn cp ckmt amber-bg float-md-right text-white">
+                                                    <i class="ti-plus mr-2"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table bd">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="amber-bg-lt amber" scope="col">#</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Client Name</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Address</th>
+                                                        <th class="amber-bg-lt amber" scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Henry Flores</td>
+                                                        <td>United States</td>
+                                                        <td>
+                                                            <a class="px-1" href="#"><i class="cp sky-blue ti-pencil"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="edit">
+                                                        <th class="slate-blue-bg-lt" scope="row">#</th>
+                                                        <td class="slate-blue-bg-lt">
+                                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Client Name"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <input type="text" class="form-control" placeholder="Enter Value"  required="">
+                                                        </td>
+                                                        <td class="slate-blue-bg-lt">
+                                                            <a class="px-1" href="#"><i class="cp text-success ti-save lh-2"></i></a>
+                                                            <a class="px-1" href="#"><i class="cp text-danger ti-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600"><span>Copyright © 2019 Designed by <a href="https://chainwebber.com/" target="_blank" title="ChainMakers">chainwebber</a>. All rights reserved.</span><!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-23581568-13');
+
+                </script>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="vendor.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
+
+</html>
